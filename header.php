@@ -23,37 +23,55 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'kuligi' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	<header id="masthead" class="siteHeader">
+		<div class="siteHeader__wrap container-lg">
+			<div class="siteHeader__logo">
+				<img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" />
+			</div>
+			<nav class="siteHeader__menu">
+				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kuligi' ); ?></button> -->
 				<?php
-			else :
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$kuligi_description = get_bloginfo( 'description', 'display' );
-			if ( $kuligi_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $kuligi_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kuligi' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+			</nav>
+			<div class="siteHeader__social">
+				<a href="<?php the_field('social_fb_link', 'option'); ?>" class="social">
+					<img src="<?php the_field('social_fb_logo', 'option'); ?>" />
+				</a>
+				<a href="<?php the_field('social_ig_link', 'option'); ?>" class="social">
+					<img src="<?php the_field('social_ig_logo', 'option'); ?>" />
+				</a>
+				<a href="<?php the_field('social_yt_link', 'option'); ?>" class="social">
+					<img src="<?php the_field('social_yt_logo', 'option'); ?>" />
+				</a>
+				<a href="<?php the_field('social_wap_link', 'option'); ?>" class="social">
+					<img src="<?php the_field('social_wap_logo', 'option'); ?>" />
+				</a>
+				<a href="<?php the_field('social_air_link', 'option'); ?>" class="social">
+					<img src="<?php the_field('social_air_logo', 'option'); ?>" />
+				</a>
+				<a href="<?php the_field('social_trip_link', 'option'); ?>" class="social">
+					<img src="<?php the_field('social_trip_logo', 'option'); ?>" />
+				</a>
+				<a href="<?php the_field('social_pin_link', 'option'); ?>" class="social">
+					<img src="<?php the_field('social_pin_logo', 'option'); ?>" />
+				</a>
+			</div>
+			<div class="siteHeader__lang">
+				
+			</div>
+			<div class="siteHeader__mobileMenu">
+				<div class="openMobileMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		
 	</header><!-- #masthead -->

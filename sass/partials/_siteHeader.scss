@@ -1,0 +1,181 @@
+.siteHeader{
+    height: 100px;
+    background-color: #fff;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        height: inherit;
+        position: relative;
+
+        &:after{
+            content: '';
+            background-image: url('/wp-content/themes/kuligi/images/number_one_badge.svg');
+            background-repeat: no-repeat;
+            background-size: 88px;
+            width: 88px;
+            height: 104px;
+            position: absolute;
+            bottom: calc(-100% + 1px);
+            right: 15px;
+            z-index: 2;
+        }
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        max-width: 135px;
+
+        img{
+            max-width: 100%;
+            max-height: 75px;
+        }
+    }
+    &__menu{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 26px;
+        max-width: calc(100% - 569px);
+        width: 100%;
+
+        .menu-menu-top-container{
+            display: block;
+            width: 100%;
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li{
+                display: flex;
+
+                a{
+                    font-size: 11px;
+                    line-height: 15px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    text-decoration: unset;
+                    color: $red;
+                    transition: ease .3s;
+
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+    &__social{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 26px;
+
+        a{
+            display: flex;
+            width: 17px;
+            margin: 0 2px;
+            transition: ease .3s;
+
+            &:hover{
+                opacity: .7;
+            }
+
+            &:first-of-type{
+                margin-left: 0;
+            }
+            &:last-of-type{
+                margin-right: 0;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__lang{
+        width: 88px;
+    }
+    &__mobileMenu{
+        display: none;
+    }
+}
+
+@media (max-width: 1429px){
+    .siteHeader{
+        &__logo{
+            max-width: 110px;
+        }
+        &__menu{
+            max-width: calc(100% - 420px);
+        }
+        &__lang{
+            width: 50px;
+        }
+    }
+}
+@media (max-width: 1199px){
+    .siteHeader{
+        height: 80px;
+
+        &__wrap{
+            &:after{
+                right: 0;
+                bottom: -98px
+            }
+        }
+        &__menu{
+            display: none;
+        }
+        &__social{
+            justify-content: flex-end;
+            width: calc(100% - 180px);
+        }
+        &__lang{
+            display: none;
+        }
+        &__mobileMenu{
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 26px;
+            width: 26px;
+
+            .openMobileMenu{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                max-width: inherit;
+                width: 100%;
+                height: 20px;
+    
+                span{
+                    height: 3px;
+                    width: 100%;
+                    background-color: $red;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px){
+    .siteHeader{
+        &__wrap{
+            &:after{
+                background-size: 70px;
+                width: 70px;
+                height: 75px;
+                bottom: -70px;
+            }
+        }
+        &__logo{
+            max-width: 90px;
+        }
+    }
+}

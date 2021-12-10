@@ -152,6 +152,31 @@ function kuligi_scripts() {
 add_action( 'wp_enqueue_scripts', 'kuligi_scripts' );
 
 /**
+ * Custom scripts / styles
+ */
+function kuligi_custom(){
+	wp_enqueue_style( 'kuligi-custom', get_template_directory_uri() . '/css/custom.css', array(), _S_VERSION );
+
+	// jQuery
+	wp_register_script( 'jQuery', get_template_directory_uri() . '/plugins/jQuery/jquery-3.6.0.min.js', null, null, true );
+	wp_enqueue_script('jQuery');
+
+	// Slick
+	wp_enqueue_style( 'slick-style', get_template_directory_uri() . '/plugins/slick/slick-theme.css', array(), _S_VERSION );
+	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/plugins/slick/slick.css', array(), _S_VERSION );
+	wp_register_script( 'slick-script', get_template_directory_uri() . '/plugins/slick/slick.min.js', null, null, true );
+	wp_enqueue_script('slick-script');
+
+	// Custom scripts / sliders
+	wp_register_script( 'kuligi-script', get_template_directory_uri() . '/js/custom.js', null, null, true );
+	wp_enqueue_script('kuligi-script');
+	
+	wp_register_script( 'kuligi-sliders', get_template_directory_uri() . '/js/_sliders.js', null, null, true );
+	wp_enqueue_script('kuligi-sliders');
+}
+add_action( 'wp_enqueue_scripts', 'kuligi_custom' );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -178,3 +203,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Theme editor page
+ */
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_sub_page(
+		array(
+			'page_title' 	=> 'Ustawienia globalne',
+			'menu_title'	=> 'Ustawienia globalne',
+			'parent'	=> 'edit.php?post_type=page',
+		)
+	);
+}

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124.225" height="108.153" viewBox="0 0 124.225 108.153">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="0.963" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d3a039"/>
+      <stop offset="0.694" stop-color="#fbe18a"/>
+      <stop offset="1" stop-color="#fbe18a"/>
+    </linearGradient>
+    <filter id="Path_220" x="88.391" y="52.387" width="35.833" height="39.16" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_219" x="0" y="52.387" width="35.833" height="39.16" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_133" x="10.08" y="46.901" width="104.841" height="39.16" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect width="38.217" height="6.497" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Certyfikowany_produkt" data-name="Certyfikowany produkt" transform="translate(9)">
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(90.555) rotate(90)" fill="url(#linear-gradient)">
+      <path d="M 74.00562286376953 71.5 L 34.14729690551758 71.5 C 30.49072647094727 71.5 27.01968193054199 69.73744964599609 24.86225128173828 66.78515625 L 8.054712295532227 43.78515243530273 C 6.605665683746338 41.80223083496094 5.839742660522461 39.45597076416016 5.839742660522461 37 C 5.839742660522461 34.54404449462891 6.6056809425354 32.19776916503906 8.054727554321289 30.21484565734863 L 24.86226654052734 7.214846134185791 C 27.01969718933105 4.262553691864014 30.49074172973633 2.5 34.14729690551758 2.5 L 74.00560760498047 2.5 C 77.66217041015625 2.5 81.13321685791016 4.262553691864014 83.2906494140625 7.214846134185791 L 100.0981903076172 30.21484565734863 C 101.547233581543 32.19776916503906 102.3131561279297 34.54404449462891 102.3131561279297 37 C 102.3131561279297 39.45595550537109 101.547233581543 41.80223083496094 100.0981903076172 43.78515243530273 L 83.2906494140625 66.78515625 C 81.13321685791016 69.73744964599609 77.66217041015625 71.5 74.00562286376953 71.5 Z" stroke="none"/>
+      <path d="M 34.14730834960938 5 C 31.28562927246094 5 28.56917572021484 6.379402160644531 26.88076019287109 8.689888000488281 L 10.07319641113281 31.68989181518555 C 8.939163208007812 33.24172592163086 8.339744567871094 35.07794570922852 8.339744567871094 37 C 8.339744567871094 38.92205429077148 8.939163208007812 40.75827407836914 10.07319641113281 42.31010818481445 L 26.88074493408203 65.31011199951172 C 28.56916046142578 67.62059783935547 31.28562927246094 69 34.14728546142578 69 L 74.005615234375 69 C 76.86726379394531 69 79.583740234375 67.62059783935547 81.27215576171875 65.31011199951172 L 98.07970428466797 42.31010818481445 C 99.2137451171875 40.75827407836914 99.81314086914062 38.92205429077148 99.81314086914062 37 C 99.81314086914062 35.07794570922852 99.2137451171875 33.24172592163086 98.07970428466797 31.68989181518555 L 81.27215576171875 8.689888000488281 C 79.583740234375 6.379402160644531 76.86726379394531 5 74.005615234375 5 L 34.14730834960938 5 M 34.14730834960938 0 L 74.005615234375 0 C 78.47348785400391 0 82.67301177978516 2.132492065429688 85.30912780761719 5.739814758300781 L 102.1166687011719 28.73981857299805 C 105.7119750976562 33.65976333618164 105.7119750976562 40.34023666381836 102.1166687011719 45.26018142700195 L 85.30912780761719 68.26018524169922 C 82.67301177978516 71.86750793457031 78.47348785400391 74 74.005615234375 74 L 34.14728546142578 74 C 29.67941284179688 74 25.47988891601562 71.86750793457031 22.84378051757812 68.26018524169922 L 6.036231994628906 45.26018142700195 C 2.440925598144531 40.34023666381836 2.440925598144531 33.65976333618164 6.036231994628906 28.73981857299805 L 22.84379577636719 5.739814758300781 C 25.47988891601562 2.132492065429688 29.67943572998047 0 34.14730834960938 0 Z" stroke="none" fill="#e3000f"/>
+    </g>
+    <g id="Group_197" data-name="Group 197" transform="translate(0 52.901)">
+      <g id="Group_196" data-name="Group 196" transform="translate(0 5.486)">
+        <g transform="matrix(1, 0, 0, 1, -9, -58.39)" filter="url(#Path_220)">
+          <path id="Path_220-2" data-name="Path 220" d="M17.833,0H0V21.16H17.833L12.184,10.721Z" transform="translate(97.39 58.39)" fill="#e3000f"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -9, -58.39)" filter="url(#Path_219)">
+          <path id="Path_219-2" data-name="Path 219" d="M0,0H17.833V21.16H0L5.649,10.721Z" transform="translate(9 58.39)" fill="#e3000f"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -9, -52.9)" filter="url(#Rectangle_133)">
+        <rect id="Rectangle_133-2" data-name="Rectangle 133" width="86.841" height="21.16" transform="translate(19.08 52.9)" fill="#e3000f"/>
+      </g>
+    </g>
+    <text id="CERTYFIKOWANY_BESKIDZKI" data-name="CERTYFIKOWANY
+BESKIDZKI" transform="translate(53.555 38.334)" font-size="7" font-family="BrandonGrotesque-Bold, Brandon Grotesque" font-weight="700"><tspan x="-28" y="0">CERTYFIKOWANY</tspan><tspan font-size="9"><tspan x="-22" y="10">BESKIDZKI</tspan></tspan></text>
+    <text id="PRODUKT" transform="translate(53.555 67.571)" fill="#fff" font-size="13" font-family="BrandonGrotesque-Bold, Brandon Grotesque" font-weight="700"><tspan x="-30" y="0">PRODUKT</tspan></text>
+    <text id="TURYSTYCZNY" transform="translate(53.555 81.787)" font-size="8" font-family="BrandonGrotesque-Bold, Brandon Grotesque" font-weight="700"><tspan x="-26" y="0">TURYSTYCZNY</tspan></text>
+    <g id="Repeat_Grid_7" data-name="Repeat Grid 7" transform="translate(34 21.552)" clip-path="url(#clip-path)">
+      <g transform="translate(-1112.5 -1372)">
+        <path id="Polygon_3" data-name="Polygon 3" d="M3,0l.87,2.058L6,2.292,4.408,3.8,4.854,6,3,4.873,1.146,6l.446-2.2L0,2.292l2.13-.234Z" transform="translate(1112.5 1372)" fill="#fff"/>
+      </g>
+      <g transform="translate(-1104.5 -1372)">
+        <path id="Polygon_3-2" data-name="Polygon 3" d="M3,0l.87,2.058L6,2.292,4.408,3.8,4.854,6,3,4.873,1.146,6l.446-2.2L0,2.292l2.13-.234Z" transform="translate(1112.5 1372)" fill="#fff"/>
+      </g>
+      <g transform="translate(-1096.5 -1372)">
+        <path id="Polygon_3-3" data-name="Polygon 3" d="M3,0l.87,2.058L6,2.292,4.408,3.8,4.854,6,3,4.873,1.146,6l.446-2.2L0,2.292l2.13-.234Z" transform="translate(1112.5 1372)" fill="#fff"/>
+      </g>
+      <g transform="translate(-1088.5 -1372)">
+        <path id="Polygon_3-4" data-name="Polygon 3" d="M3,0l.87,2.058L6,2.292,4.408,3.8,4.854,6,3,4.873,1.146,6l.446-2.2L0,2.292l2.13-.234Z" transform="translate(1112.5 1372)" fill="#fff"/>
+      </g>
+      <g transform="translate(-1080.5 -1372)">
+        <path id="Polygon_3-5" data-name="Polygon 3" d="M3,0l.87,2.058L6,2.292,4.408,3.8,4.854,6,3,4.873,1.146,6l.446-2.2L0,2.292l2.13-.234Z" transform="translate(1112.5 1372)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

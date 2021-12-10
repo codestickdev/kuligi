@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="123.398" viewBox="0 0 107 123.398">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.119" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d3a039"/>
+      <stop offset="0.694" stop-color="#fbe18a"/>
+      <stop offset="1" stop-color="#fbe18a"/>
+    </linearGradient>
+    <filter id="Path_135" x="0" y="81.231" width="106.925" height="42.167" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_59" x="0" y="5.053" width="107" height="96" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect width="58.591" height="8.172" fill="none"/>
+    </clipPath>
+    <filter id="Path_134" x="6" y="0" width="93.841" height="38.721" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Nr_1_w_Beskidach" data-name="Nr 1 w Beskidach" transform="translate(-1630.355 -388.148)">
+    <g id="premium_qality" data-name="premium qality" transform="translate(1639.855 395.701)">
+      <g transform="matrix(1, 0, 0, 1, -9.5, -7.55)" filter="url(#Path_135)">
+        <path id="Path_135-2" data-name="Path 135" d="M0,0H87.925V12.963L45.336,23.154,0,12.963Z" transform="translate(9.5 87.73)" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#linear-gradient)"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -9.5, -7.55)" filter="url(#Rectangle_59)">
+        <rect id="Rectangle_59-2" data-name="Rectangle 59" width="88" height="77" transform="translate(9.5 11.55)" fill="#e3000f" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+      </g>
+      <text id="NR_1" data-name="NR 1" transform="translate(30.42 47.353)" fill="#fff" font-size="14" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="0">NR 1</tspan></text>
+      <text id="W_BESKIDACH" data-name="W BESKIDACH" transform="translate(4.796 61.065)" fill="#fff" font-size="12" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="0">W BESKIDACH</tspan></text>
+      <g id="Repeat_Grid_5" data-name="Repeat Grid 5" transform="translate(15 67.536)" clip-path="url(#clip-path)">
+        <g transform="translate(-12.412 -67.536)">
+          <path id="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+        <g transform="translate(-0.412 -67.536)">
+          <path id="gwiazdka-2" data-name="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+        <g transform="translate(11.588 -67.536)">
+          <path id="gwiazdka-3" data-name="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+        <g transform="translate(23.588 -67.536)">
+          <path id="gwiazdka-4" data-name="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+        <g transform="translate(35.588 -67.536)">
+          <path id="gwiazdka-5" data-name="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Repeat_Grid_6" data-name="Repeat Grid 6" transform="translate(15 22.918)" clip-path="url(#clip-path)">
+        <g transform="translate(-12.412 -67.536)">
+          <path id="gwiazdka-6" data-name="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+        <g transform="translate(-0.412 -67.536)">
+          <path id="gwiazdka-7" data-name="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+        <g transform="translate(11.588 -67.536)">
+          <path id="gwiazdka-8" data-name="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+        <g transform="translate(23.588 -67.536)">
+          <path id="gwiazdka-9" data-name="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+        <g transform="translate(35.588 -67.536)">
+          <path id="gwiazdka-10" data-name="gwiazdka" d="M43.381,68.072l1.326,2.691,2.969.43-2.148,2.1.507,2.955-2.654-1.4-2.657,1.4.509-2.955-2.148-2.1,2.968-.43Z" transform="translate(-26.674 -0.537)" fill="#fff"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -9.5, -7.55)" filter="url(#Path_134)">
+        <path id="Path_134-2" data-name="Path 134" d="M0,0H74.841V11.034L38.59,19.708,0,11.034Z" transform="translate(15.5 6.5)" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>
