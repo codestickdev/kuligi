@@ -97,8 +97,12 @@
                     a{
                         outline: none;
                         text-decoration: none;
-                        margin-right: 3px;
+                        margin-right: 5px;
                         transition: ease .3s;
+
+                        img{
+                            width: 22px;
+                        }
 
                         &:last-of-type{
                             margin-right: 0;

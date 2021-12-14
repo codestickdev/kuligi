@@ -205,7 +205,7 @@ body {
 
 .siteHeader__social a {
   display: flex;
-  width: 17px;
+  width: 22px;
   margin: 0 2px;
   transition: ease .3s;
 }
@@ -315,6 +315,9 @@ body.admin-bar .siteHeader {
   }
   .siteHeader__logo {
     max-width: 90px;
+  }
+  .siteHeader__social a {
+    max-width: 17px;
   }
 }
 
@@ -476,8 +479,12 @@ body.admin-bar .siteHeader {
 .siteFooter__about .top__contact .social a {
   outline: none;
   text-decoration: none;
-  margin-right: 3px;
+  margin-right: 5px;
   transition: ease .3s;
+}
+
+.siteFooter__about .top__contact .social a img {
+  width: 22px;
 }
 
 .siteFooter__about .top__contact .social a:last-of-type {
