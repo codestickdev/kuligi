@@ -173,6 +173,7 @@ add_action( 'wp_enqueue_scripts', 'kuligi_scripts' );
  * Custom scripts / styles
  */
 function kuligi_custom(){
+	global $theme_version, $random_number;
 	wp_enqueue_style( 'kuligi-custom', get_template_directory_uri() . '/css/custom.css', array(), $theme_version . $random_number );
 
 	// jQuery
