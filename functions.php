@@ -50,7 +50,8 @@ if ( ! function_exists( 'kuligi_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'kuligi' ),
+				'menu-1' => esc_html__( 'Header', 'kuligi' ),
+				'menu-2' => esc_html__( 'Footer', 'kuligi' ),
 			)
 		);
 

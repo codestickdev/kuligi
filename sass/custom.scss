@@ -8,6 +8,7 @@
 /* Partials
 ------------- */
 @import 'partials/_siteHeader';
+@import 'partials/_siteFooter';
 @import 'partials/_catTile';
 
 /* Pages
@@ -25,6 +26,14 @@
     }
 }
 
+body{
+    overflow-x: hidden;
+
+    &.noscroll{
+        overflow-y: hidden !important;
+    }
+}
+
 .btn{
     min-width: 160px;
     max-width: fit-content;
@@ -35,6 +44,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    border: 0;
     outline: none;
     background-color: $red;
     border-radius: 3px;
@@ -58,5 +68,18 @@
 
     &--center{
         margin: 0 auto;
+    }
+    &--newsletter{
+        background-color: #fff;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #fff;
+            opacity: .8;
+        }
+
+        span{
+            color: $red;
+        }
     }
 }

@@ -23,6 +23,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
+	<div class="headerClone"></div>
 	<header id="masthead" class="siteHeader">
 		<div class="siteHeader__wrap container-lg">
 			<div class="siteHeader__logo">
@@ -73,5 +74,9 @@
 				</div>
 			</div>
 		</div>
-		
+		<div id="mobileMenu" class="mobileMenu">
+			<div class="mobileMenu__list">
+				<?php wp_nav_menu(array('theme_location' => 'menu-1')); ?>
+			</div>
+		</div>
 	</header><!-- #masthead -->
