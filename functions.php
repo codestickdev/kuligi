@@ -137,6 +137,23 @@ function kuligi_widgets_init() {
 }
 add_action( 'widgets_init', 'kuligi_widgets_init' );
 
+/*
+ *	Versioning styles
+ */
+function wpmix_get_version() {
+	$theme_data = wp_get_theme();
+	return $theme_data->Version;
+}
+$theme_version = wpmix_get_version();
+global $theme_version;
+
+function wpmix_get_random() {
+	$randomizr = '-' . rand(100,999);
+	return $randomizr;
+}
+$random_number = wpmix_get_random();
+global $random_number;
+
 /**
  * Enqueue scripts and styles.
  */
@@ -156,7 +173,7 @@ add_action( 'wp_enqueue_scripts', 'kuligi_scripts' );
  * Custom scripts / styles
  */
 function kuligi_custom(){
-	wp_enqueue_style( 'kuligi-custom', get_template_directory_uri() . '/css/custom.css', array(), _S_VERSION );
+	wp_enqueue_style( 'kuligi-custom', get_template_directory_uri() . '/css/custom.css', array(), $theme_version . $random_number );
 
 	// jQuery
 	wp_register_script( 'jQuery', get_template_directory_uri() . '/plugins/jQuery/jquery-3.6.0.min.js', null, null, true );
@@ -169,10 +186,10 @@ function kuligi_custom(){
 	wp_enqueue_script('slick-script');
 
 	// Custom scripts / sliders
-	wp_register_script( 'kuligi-script', get_template_directory_uri() . '/js/custom.js', null, null, true );
+	wp_register_script( 'kuligi-script', get_template_directory_uri() . '/js/custom.js?ver=' . $theme_version . $random_number, null, null, true );
 	wp_enqueue_script('kuligi-script');
 	
-	wp_register_script( 'kuligi-sliders', get_template_directory_uri() . '/js/_sliders.js', null, null, true );
+	wp_register_script( 'kuligi-sliders', get_template_directory_uri() . '/js/_sliders.js?ver=' . $theme_version . $random_number, null, null, true );
 	wp_enqueue_script('kuligi-sliders');
 }
 add_action( 'wp_enqueue_scripts', 'kuligi_custom' );
