@@ -4,6 +4,9 @@ $(document).ready(function(){
         slidesToScroll: 1,
         variableWidth: true,
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 800,
     });
     $('.logoSlider').each(function(){
         $(this).slick({
@@ -12,6 +15,8 @@ $(document).ready(function(){
             infinite: true,
             dots: false,
             arrows: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
             responsive: [
                 {
                     breakpoint: 1500,
@@ -39,5 +44,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: true,
         dots: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 500,
     })
 });
