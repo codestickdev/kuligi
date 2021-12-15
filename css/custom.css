@@ -1252,12 +1252,22 @@ body.admin-bar .siteHeader {
 .frontAbout__one .content p, .frontAbout__two .content p, .frontAbout__three .content p {
   font-size: 17px;
   line-height: 30px;
-  color: #000e79;
+  color: #000;
   margin: 0 0 20px;
 }
 
 .frontAbout__one .content p b, .frontAbout__two .content p b, .frontAbout__three .content p b {
   font-weight: 800;
+}
+
+.frontAbout__one .content p a, .frontAbout__two .content p a, .frontAbout__three .content p a {
+  font-weight: 800;
+  color: #E3000F;
+  transition: ease .3s;
+}
+
+.frontAbout__one .content p a:hover, .frontAbout__two .content p a:hover, .frontAbout__three .content p a:hover {
+  color: #f1424e;
 }
 
 .frontAbout__one {
@@ -1690,7 +1700,7 @@ body.admin-bar .siteHeader {
 .frontInfo__wrap p {
   font-size: 17px;
   line-height: 30px;
-  color: #000e79;
+  color: #000;
   text-align: left;
   margin: 0;
 }
@@ -2199,7 +2209,7 @@ body.admin-bar .siteHeader {
 .frontTestimonial__wrap .testimonialSlider__slide .content {
   font-size: 16px;
   line-height: 22px;
-  color: #000e79;
+  color: #000;
   text-align: center;
   margin: 0 0 20px;
 }
@@ -2229,7 +2239,7 @@ body.admin-bar .siteHeader {
 .frontTestimonial__wrap .testimonialSlider__slide .source {
   font-size: 16px;
   line-height: 22px;
-  color: #000e79;
+  color: #000;
   text-align: center;
   margin: 0;
 }

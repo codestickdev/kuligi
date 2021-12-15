@@ -269,11 +269,20 @@
             p{
                 font-size: 17px;
                 line-height: 30px;
-                color: $blue_text;
+                color: #000;
                 margin: 0 0 20px;
 
                 b{
                     font-weight: 800;
+                }
+                a{
+                    font-weight: 800;
+                    color: $red;
+                    transition: ease .3s;
+
+                    &:hover{
+                        color: $red_hover;
+                    }
                 }
             }
         }
@@ -761,7 +770,7 @@
         p{
             font-size: 17px;
             line-height: 30px;
-            color: $blue_text;
+            color: #000;
             text-align: left;
             margin: 0;
 
@@ -1299,7 +1308,7 @@
                 .content{
                     font-size: 16px;
                     line-height: 22px;
-                    color: $blue_text;
+                    color: #000;
                     text-align: center;
                     margin: 0 0 20px;
                 }
@@ -1328,7 +1337,7 @@
                 .source{
                     font-size: 16px;
                     line-height: 22px;
-                    color: $blue_text;
+                    color: #000;
                     text-align: center;
                     margin: 0;
                 }
