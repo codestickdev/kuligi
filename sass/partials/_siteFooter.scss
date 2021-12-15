@@ -222,7 +222,7 @@
                     font-size: 13px;
                     line-height: 18px;
                     color: #fff;
-                    text-align: left;
+                    text-align: justify;
                     margin: 0;
                 }
             }
@@ -300,12 +300,12 @@
 @media (max-width: 1429px){
     .siteFooter{
         &__wrap{
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
         &__company{
             max-width: 100%;
             text-align: center;
-            margin: 0 0 20px;
+            margin: 0;
             padding-right: 0;
         }
         &__shops{
@@ -333,6 +333,7 @@
         }
         &__about{
             max-width: 100%;
+            margin: 0 0 30px;
         }
     }
 }
