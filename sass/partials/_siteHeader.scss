@@ -20,19 +20,6 @@
         justify-content: space-between;
         height: inherit;
         position: relative;
-
-        &:after{
-            content: '';
-            background-image: url('/wp-content/themes/kuligi/images/number_one_badge.svg');
-            background-repeat: no-repeat;
-            background-size: 88px;
-            width: 88px;
-            height: 104px;
-            position: absolute;
-            bottom: calc(-100% + 1px);
-            right: 15px;
-            z-index: 2;
-        }
     }
     &__logo{
         display: flex;
@@ -150,12 +137,6 @@ body.admin-bar{
     .siteHeader{
         height: 80px;
 
-        &__wrap{
-            &:after{
-                right: 0;
-                bottom: -98px
-            }
-        }
         &__menu{
             display: none;
         }
@@ -207,14 +188,6 @@ body.admin-bar{
 }
 @media (max-width: 575px){
     .siteHeader{
-        &__wrap{
-            &:after{
-                background-size: 70px;
-                width: 70px;
-                height: 75px;
-                bottom: -70px;
-            }
-        }
         &__logo{
             max-width: 90px;
         }

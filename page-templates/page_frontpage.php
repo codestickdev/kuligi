@@ -32,7 +32,42 @@ get_header(); ?>
         </div>
     </section>
 
+    <?php if(get_field('aboutSlider')): ?>
     <section class="frontAbout">
+        <div class="frontAbout__badges">
+            <div class="badge">
+                <img src="<?php echo get_template_directory_uri() . '/images/logos/top_marka.png' ?>"/>
+            </div>
+            <div class="badge">
+                <img src="<?php echo get_template_directory_uri() . '/images/logos/certyfikowany_produkt.svg' ?>"/>
+            </div>
+            <div class="badge">
+                <img src="<?php echo get_template_directory_uri() . '/images/logos/odkrycie_turystyczne.png' ?>"/>
+            </div>
+            <div class="badge">
+                <img src="<?php echo get_template_directory_uri() . '/images/logos/laur_jakosci.png' ?>"/>
+            </div>
+        </div>
+        <div class="frontAbout__wrap container">
+            <div class="aboutContent">
+                <?php while(have_rows('aboutSlider')): the_row();?>
+                    <div class="aboutContent__slide">
+                        <?php echo get_sub_field('aboutSlider_content'); ?>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+            <div class="aboutImages">
+                <?php while(have_rows('aboutSlider')): the_row();?>
+                    <div class="aboutImages__slide">
+                        <img src="<?php echo get_sub_field('aboutSlider_image'); ?>"/>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+    </section>
+    <?php endif; ?>
+
+    <!-- <section class="frontAbout">
         <div class="frontAbout__wrap container">
             <div class="frontAbout__badges">
                 <div class="badge">
@@ -84,7 +119,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="frontOffer">
         <div class="frontOffer__wrap">

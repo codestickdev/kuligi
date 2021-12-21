@@ -8,6 +8,37 @@ $(document).ready(function(){
         autoplaySpeed: 4000,
         speed: 800,
     });
+    $('.aboutContent').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        asNavFor: $('.aboutImages'),
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    adaptiveHeight: true,
+                }
+            }
+        ]
+    });
+    $('.aboutImages').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        fade: true,
+        asNavFor: $('.aboutContent'),
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    adaptiveHeight: true,
+                }
+            }
+        ]
+    });
     $('.logoSlider').each(function(){
         $(this).slick({
             slidesToShow: 8,
