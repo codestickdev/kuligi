@@ -2608,6 +2608,18 @@ body.admin-bar .siteHeader {
   margin: 0 0 25px;
 }
 
+.frontRecommend__wrap .logoSlider .slick-track {
+  display: flex !important;
+  align-items: center;
+}
+
+.frontRecommend__wrap .logoSlider__slide img {
+  padding: 0 10px;
+  max-width: calc(100% - 10px);
+  max-height: 70px;
+  margin: 0 auto;
+}
+
 @media (max-width: 991px) {
   .frontRecommend__wrap > h2 {
     font-size: 18px;
