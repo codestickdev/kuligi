@@ -1251,6 +1251,7 @@ body.admin-bar .siteHeader {
 
 .frontAbout__wrap .aboutContent {
   max-width: calc(100% / 2 - 14px);
+  width: 100%;
 }
 
 .frontAbout__wrap .aboutContent .slick-track {
@@ -1313,6 +1314,7 @@ body.admin-bar .siteHeader {
 
 .frontAbout__wrap .aboutImages {
   max-width: calc(100% / 2 - 14px);
+  width: 100%;
 }
 
 .frontAbout__wrap .aboutImages__slide {
