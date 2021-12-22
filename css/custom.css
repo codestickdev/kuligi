@@ -134,12 +134,12 @@ body {
 .siteHeader__logo {
   display: flex;
   align-items: center;
-  max-width: 135px;
+  max-width: 200px;
 }
 
 .siteHeader__logo img {
   max-width: 100%;
-  max-height: 75px;
+  max-height: 80px;
 }
 
 .siteHeader__menu {
@@ -147,7 +147,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 26px;
-  max-width: calc(100% - 569px);
+  max-width: calc(100% - 634px);
   width: 100%;
 }
 
@@ -247,12 +247,15 @@ body.admin-bar .siteHeader {
   .siteHeader {
     height: 80px;
   }
+  .siteHeader__logo {
+    max-width: 200px;
+  }
   .siteHeader__menu {
     display: none;
   }
   .siteHeader__social {
     justify-content: flex-end;
-    width: calc(100% - 180px);
+    width: calc(100% - 270px);
   }
   .siteHeader__lang {
     display: none;
@@ -291,7 +294,10 @@ body.admin-bar .siteHeader {
 
 @media (max-width: 575px) {
   .siteHeader__logo {
-    max-width: 90px;
+    max-width: 150px;
+  }
+  .siteHeader__social {
+    width: calc(100% - 220px);
   }
   .siteHeader__social a {
     max-width: 17px;

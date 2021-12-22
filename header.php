@@ -27,7 +27,7 @@
 	<header id="masthead" class="siteHeader">
 		<div class="siteHeader__wrap container-lg">
 			<div class="siteHeader__logo">
-				<img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" />
+				<img src="<?php echo get_template_directory_uri() . '/images/logo_new.jpg'; ?>" />
 			</div>
 			<nav class="siteHeader__menu">
 				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kuligi' ); ?></button> -->
