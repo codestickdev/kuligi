@@ -8,44 +8,91 @@
  */
 
 get_header();
+$page_id = get_the_ID();
+$name = '';
+$cat_id = 0;
+$terms = get_the_terms($post->ID, 'kategorie_kuligi');
+foreach($terms as $term){
+	$name = $term->name;
+	$cat_id = $term->term_id;
+}
 ?>
+<main class="kwb kwb--category" data-id="<?php echo $cat_id; ?>">
+	<header class="catHeader" style="background-image: url('<?php echo get_template_directory_uri() . '/images/frontpage/typeOffer_03.png'; ?>');">
+		<div class="catHeader__wrap container">
+			<h1><?php echo $name; ?></h1>
+			<h2><?php echo get_field('kulcat_flag_text', 'term_' . $cat_id); ?></h2>
+		</div>
+	</header>
 
-	<main id="primary" class="site-main">
+	<?php if(get_field('aboutSlider', 8)): ?>
+    <section class="frontAbout">
+        <div class="frontAbout__badges">
+            <div class="badge">
+                <img src="<?php echo get_template_directory_uri() . '/images/logos/top_marka.png' ?>"/>
+            </div>
+            <div class="badge">
+                <img src="<?php echo get_template_directory_uri() . '/images/logos/certyfikowany_produkt.svg' ?>"/>
+            </div>
+            <div class="badge">
+                <img src="<?php echo get_template_directory_uri() . '/images/logos/odkrycie_turystyczne.png' ?>"/>
+            </div>
+            <div class="badge">
+                <img src="<?php echo get_template_directory_uri() . '/images/logos/laur_jakosci.png' ?>"/>
+            </div>
+        </div>
+        <div class="frontAbout__wrap container">
+            <div class="aboutContent">
+                <?php while(have_rows('aboutSlider', 8)): the_row();?>
+                    <div class="aboutContent__slide">
+                        <?php echo get_sub_field('aboutSlider_content'); ?>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+            <div class="aboutImages">
+                <?php while(have_rows('aboutSlider', 8)): the_row();?>
+                    <div class="aboutImages__slide">
+                        <img src="<?php echo get_sub_field('aboutSlider_image'); ?>"/>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+    </section>
+    <?php endif; ?>
 
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
+	<section class="productList">
+		<div class="productList__list">
 			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+				if ( have_posts() ){
+					while(have_posts()){
+						the_post();
+                    	include get_template_directory() . '/template-parts/_prodTile.php';
+					}
+					the_posts_navigation();
+				}else{
+					get_template_part( 'template-parts/content', 'none' );
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				}
+			?>
+		</div>
 
-			endwhile;
+		<div class="divider divider--long"><span>Zobacz także inne nasze oferty</span></div>
 
-			the_posts_navigation();
+		<?php
+        $args_one = array('hide_empty' => 0, 'number' => 6, 'orderby' => 'ID', 'order' => 'ASC');
+        $terms_one = get_terms( 'kategorie_kuligi', $args_one );
+        if ( !empty( $terms_one ) && !is_wp_error( $terms_one ) ): ?>
+            <div class="productList__list">
+            <?php
+                foreach ( $terms_one as $term ){
+                    $catID = $term->term_id;
+                    include get_template_directory() . '/template-parts/_catTile.php';
+                }
+            ?>
+            </div>
+        <?php endif; ?>
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
-
+	</section>
+</main>
 <?php
-get_sidebar();
 get_footer();
