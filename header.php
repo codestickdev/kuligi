@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVsxlxHIR-f5y2bHNk-_GmTGvbyBuZW_A"></script>
 	<?php wp_head(); ?>
 </head>
 

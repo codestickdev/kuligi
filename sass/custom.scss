@@ -15,6 +15,7 @@
 ------------ */
 @import 'pages/_frontpage.scss';
 @import 'pages/_category.scss';
+@import 'pages/_single.scss';
 
 #wpadminbar{
     position: fixed;
@@ -88,7 +89,7 @@ body{
 .divider{
     max-width: 340px;
     width: 100%;
-    height: 45px;
+    min-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,10 +133,21 @@ body{
         text-transform: uppercase;
         margin: 0;
         display: block;
-        padding: 0 30px;
+        padding: 10px 40px;
     }
 
     &--long{
         max-width: 1200px;
+    }
+    &--left{
+        margin: 0;
+    }
+}
+@media (max-width: 767px){
+    .divider{
+        span{
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
 }

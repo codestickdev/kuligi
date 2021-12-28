@@ -367,6 +367,12 @@
             }
         }
     }
+
+    &--single{
+        .frontAbout__badges{
+            margin: 0 auto !important;
+        }
+    }
 }
 @media (max-width: 1429px){
     .frontAbout{
@@ -1036,6 +1042,10 @@
                 margin: 0;
             }
         }
+    }
+
+    &--single{
+        margin-top: 0;
     }
 }
 @media (max-width: 1429px){

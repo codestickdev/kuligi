@@ -80,3 +80,15 @@ $(document).ready(function(){
         speed: 500,
     })
 });
+
+/**
+ * Single kuligi
+ */
+$(document).ready(function(){
+    $('.singleContent__gallery').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+    });
+});

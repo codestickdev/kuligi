@@ -75,9 +75,7 @@ foreach($terms as $term){
 				}
 			?>
 		</div>
-
 		<div class="divider divider--long"><span>Zobacz także inne nasze oferty</span></div>
-
 		<?php
         $args_one = array('hide_empty' => 0, 'number' => 6, 'orderby' => 'ID', 'order' => 'ASC');
         $terms_one = get_terms( 'kategorie_kuligi', $args_one );
@@ -91,7 +89,6 @@ foreach($terms as $term){
             ?>
             </div>
         <?php endif; ?>
-
 	</section>
 </main>
 <?php
