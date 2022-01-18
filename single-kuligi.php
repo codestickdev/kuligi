@@ -195,14 +195,16 @@ get_header();
                 <span>ZAPOZNAJ SIĘ ZE SZCZEGÓŁAMI OFERTY, CENNIKIEM, TERMINAMI I REGULAMINEM IMPREZY</span>
             </div>
             <div class="droplabs">
-                <p>Droplabs</p>
+                <?php the_field('single_droplabs'); ?>
             </div>
-            <div class="divider divider--long">
-                <span>REZERWUJ DODATKOWE ATRAKCJE PODCZAS TWOJEGO KULIGU</span>
-            </div>
-            <div class="droplabs">
-                <p>Droplabs</p>
-            </div>
+            <?php if(get_field('single_droplabs_extra')): ?>
+                <div class="divider divider--long">
+                    <span>REZERWUJ DODATKOWE ATRAKCJE PODCZAS TWOJEGO KULIGU</span>
+                </div>
+                <div class="droplabs">
+                    <?php the_field('single_droplabs_extra'); ?>
+                </div>
+            <?php endif; ?>
         </div>
     </section>
     <section class="singleOther">
