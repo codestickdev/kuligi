@@ -78,19 +78,19 @@ get_header(); ?>
             <div class="frontOffer__type" style="background-image: url('<?php echo get_template_directory_uri() . '/images/frontpage/typeOffer_01.png'; ?>');">
                 <div class="content container">
                     <h3>Zobacz ofertę kuligów w Beskidzie żywieckim</h3>
-                    <a href="#" class="btn btn--center"><span>Rezerwuj teraz</span></a>
+                    <a href="/kategorie_kuligi/kuligi-w-beskidzie-zywieckim/" class="btn btn--center"><span>Rezerwuj teraz</span></a>
                 </div>
             </div>
             <div class="frontOffer__type" style="background-image: url('<?php echo get_template_directory_uri() . '/images/frontpage/typeOffer_02.png'; ?>');">
                 <div class="content container">
                     <h3>Zobacz ofertę kuligów w Beskidzie śląskim</h3>
-                    <a href="#" class="btn btn--center"><span>Rezerwuj teraz</span></a>
+                    <a href="/kategorie_kuligi/kuligi-w-beskidzie-slaskim/" class="btn btn--center"><span>Rezerwuj teraz</span></a>
                 </div>
             </div>
             <div class="frontOffer__type" style="background-image: url('<?php echo get_template_directory_uri() . '/images/frontpage/typeOffer_03.png'; ?>');">
                 <div class="content container">
                     <h3>Zobacz ofertę kuligów w Beskidzie małym</h3>
-                    <a href="#" class="btn btn--center"><span>Rezerwuj teraz</span></a>
+                    <a href="/kategorie_kuligi/kuligi-w-beskidzie-malym/" class="btn btn--center"><span>Rezerwuj teraz</span></a>
                 </div>
             </div>
         </div>
@@ -114,13 +114,13 @@ get_header(); ?>
             </div>
         </div>
         <?php
-        $args_one = array('hide_empty' => 0, 'number' => 6, 'orderby' => 'ID', 'order' => 'ASC');
+        $args_one = array('hide_empty' => 0, 'number' => 6, 'orderby' => 'ID', 'order' => 'ASC', 'post__not_in' => 28, 29, 30);
         $terms_one = get_terms( 'kategorie_kuligi', $args_one );
 
-        $args_two = array('hide_empty' => 0, 'number' => 6, 'offset' => 6, 'orderby' => 'ID', 'order' => 'ASC');
+        $args_two = array('hide_empty' => 0, 'number' => 6, 'offset' => 6, 'orderby' => 'ID', 'order' => 'ASC', 'post__not_in' => 28, 29, 30);
         $terms_two = get_terms( 'kategorie_kuligi', $args_two );
 
-        $args_three = array('hide_empty' => 0, 'number' => 12, 'offset' => 12, 'orderby' => 'ID', 'order' => 'ASC');
+        $args_three = array('hide_empty' => 0, 'number' => 12, 'offset' => 12, 'orderby' => 'ID', 'order' => 'ASC', 'post__not_in' => 28, 29, 30);
         $terms_three = get_terms( 'kategorie_kuligi', $args_three );
 
         if ( !empty( $terms_one ) && !is_wp_error( $terms_one ) ): ?>

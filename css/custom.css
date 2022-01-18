@@ -137,7 +137,15 @@ body {
   max-width: 200px;
 }
 
-.siteHeader__logo img {
+.siteHeader__logo a {
+  transition: ease .3s;
+}
+
+.siteHeader__logo a:hover {
+  opacity: .8;
+}
+
+.siteHeader__logo a img {
   max-width: 100%;
   max-height: 80px;
 }
