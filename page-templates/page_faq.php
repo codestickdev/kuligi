@@ -4,7 +4,7 @@
      */
 get_header(); ?>
 
-<main class="kwb kwb--coop">
+<main class="kwb kwb--faq">
     <section class="subpageHeader subpageHeader--noshadow" style="background-image: url('<?php echo the_field('faqHeader_bg'); ?>');">
         <div class="subpageHeader__wrap container">
             <h1>Kuligi w beskidach</h1>
