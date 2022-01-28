@@ -1,0 +1,178 @@
+.kwbMap{
+    background-color: #f2f2f2;
+
+    &__wrap{
+        position: relative;
+        overflow: hidden;
+    }
+    &__sidebar{
+        max-width: 414px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: #fff;
+        transition: ease 1.5s;
+        z-index: 9;
+        overflow: hidden;
+
+        .thumb{
+            height: 257px;
+            width: 100%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .title{
+            display: flex;
+            align-items: center;
+            min-height: 64px;
+            width: 100%;
+            background-color: $red;
+            padding: 10px 20px;
+
+            .back{
+                position: relative;
+                margin-right: 10px;
+                cursor: pointer;
+                transition: ease .3s;
+
+                &:hover{
+                    opacity: .7;
+                }
+
+                &:after{
+                    content: '';
+                    background-image: url('/wp-content/themes/kuligi/images/icons/back_arrow_ico.svg');
+                    background-repeat: no-repeat;
+                    background-size: 24px;
+                    width: 24px;
+                    height: 24px;
+                    position: relative;
+                    display: block;
+                }
+            }
+
+            h3{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 20px;
+                line-height: 26px;
+                color: #fff;
+                font-weight: 900;
+                margin: 0;
+                width: 100%;
+                
+                span{
+                    display: block;
+                    max-width: calc(100% - 35px);
+                }
+            }
+            a{
+                position: relative;
+                cursor: pointer;
+                transition: ease .3s;
+
+                &:hover{
+                    opacity: .7;
+                }
+
+                &:after{
+                    content: '';
+                    background-image: url('/wp-content/themes/kuligi/images/icons/route_ico.svg');
+                    background-repeat: no-repeat;
+                    background-size: 26px;
+                    width: 26px;
+                    height: 26px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    right: 0;
+                }
+            }
+        }
+        .desc{
+            background-color: #fff;
+            padding: 30px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            max-height: calc(100% - 321px);
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
+            p{
+                font-size: 17px;
+                line-height: 25px;
+                color: #000;
+                margin: 0;
+
+                &.name{
+                    color: #7C7C7C;
+                    margin: 20px 0 0;
+    
+                    &:first-of-type{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        &--active{
+            left: 0;
+            box-shadow: 5px 0px 0px #0000001f;
+        }
+    }
+    
+    #kuligiMap{
+        min-height: 700px;
+    }
+}
+
+@media (max-width: 991px){
+    .kwbMap{
+        &__sidebar{
+            max-width: 360px;
+
+            .thumb{
+                height: 190px;
+            }
+            .title{
+                min-height: 50px;
+
+                h3{
+                    font-size: 17px;
+                    line-height: 21px;
+                }
+            }
+            .desc{
+                padding: 20px;
+                max-height: calc(100% - 240px);
+
+                p{
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+        }
+        #kuligiMap{
+            min-height: 500px;
+        }
+    }
+}
+@media (max-width: 767px){
+    .kwbMap{
+        &__wrap{
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+}

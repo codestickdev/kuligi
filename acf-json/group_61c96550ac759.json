@@ -107,6 +107,25 @@
             "step": ""
         },
         {
+            "key": "field_61f4267e9de31",
+            "label": "Krótki opis",
+            "name": "main_shortdesc",
+            "type": "textarea",
+            "instructions": "Krótki opis pokazuje się m. in. na mapie kuligów",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_61c965dbbf33f",
             "label": "Lista",
             "name": "main_list",
@@ -668,5 +687,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1643378245
+    "modified": 1643390629
 }

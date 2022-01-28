@@ -221,8 +221,27 @@ function kuligi_custom(){
 
 	wp_register_script( 'kuligi-map', get_template_directory_uri() . '/js/_map.js?ver=' . $theme_version . $random_number, null, null, true );
 	wp_enqueue_script('kuligi-map');
+	wp_localize_script( 'kuligi-map', 'PBAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 }
 add_action( 'wp_enqueue_scripts', 'kuligi_custom' );
+
+add_action('wp_ajax_kuligiMapa', 'kuligiMapa');
+add_action('wp_ajax_nopriv_kuligiMapa', 'kuligiMapa');
+
+function kuligiMapa(){
+	$postID = isset( $_POST['postID'] ) ? $_POST['postID'] : '';
+
+	$data = array(
+		'image' => get_field('main_image', $postID),
+		'title' => get_the_title($postID),
+		'desc' => get_field('main_shortdesc', $postID),
+		'url' => get_permalink($postID),
+	);
+
+	print json_encode($data);
+
+	die();
+}
 
 /**
  * Implement the Custom Header feature.
