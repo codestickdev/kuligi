@@ -81,7 +81,7 @@
                     "key": "field_61f2d280d91f3",
                     "label": "Adres URL",
                     "name": "partnersList_url",
-                    "type": "text",
+                    "type": "url",
                     "instructions": "",
                     "required": 1,
                     "conditional_logic": 0,
@@ -91,10 +91,7 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "Adres URL",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "placeholder": ""
                 },
                 {
                     "key": "field_61f2d129d55ec",
@@ -178,5 +175,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1643304511
+    "modified": 1643393925
 }
