@@ -151,8 +151,8 @@ $(document).ready(function(){
 
         // Create gerenic map.
         var mapArgs = {
-            center      : { lat: 49.7961472, lng: 19.186736 },
-            zoom        : $el.data('zoom') || 11,
+            center      : { lat: 49.7114602, lng: 19.2059903 },
+            zoom        : $el.data('zoom') || 10,
             mapTypeId   : google.maps.MapTypeId.TERRAIN
         };
         var map = new google.maps.Map( $el[0], mapArgs );
