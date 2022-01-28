@@ -89,7 +89,7 @@ get_header();
                         <li><?php echo get_sub_field('singleLocation_program_pos'); ?></li>
                         <?php endwhile; ?>
                     </ul>
-                    <p class="info">UWAGA!<br/>w razie braku śniegu zorganizujemy kulig na wozach na kołach.</p>
+                    <p class="info">UWAGA!<br/>Prosimy być 15 minut wcześniej na miejscu.<br/>W razie braku śniegu zorganizujemy kulig na wozach na kołach.</p>
                 </div>
                 <?php endif; ?>
             </div>
@@ -164,20 +164,7 @@ get_header();
         </div>
     </section>
     <section class="frontAbout frontAbout--single">
-        <div class="frontAbout__badges">
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/top_marka.png' ?>"/>
-            </div>
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/certyfikowany_produkt.svg' ?>"/>
-            </div>
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/odkrycie_turystyczne.png' ?>"/>
-            </div>
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/laur_jakosci.png' ?>"/>
-            </div>
-        </div>
+        <?php include get_template_directory() . '/template-parts/_aboutBadges.php'; ?>
     </section>
     <section class="singleInfo">
         <div class="singleInfo__heading">
