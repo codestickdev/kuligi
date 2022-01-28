@@ -28,7 +28,7 @@
 	<header id="masthead" class="siteHeader">
 		<div class="siteHeader__wrap container-lg">
 			<div class="siteHeader__logo">
-				<a href="<?php get_home_url(); ?>">
+				<a href="<?php echo get_home_url(); ?>">
 					<img src="<?php echo get_template_directory_uri() . '/images/logo_new.jpg'; ?>" />
 				</a>
 			</div>

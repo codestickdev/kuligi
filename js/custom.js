@@ -97,3 +97,13 @@ $(document).ready(function(){
     //     }
     // }); 
 });
+
+/**
+ * FAQ list
+ */
+$(document).ready(function(){
+    $('.question').on('click', function(){
+        $(this).toggleClass('question--active');
+        $(this).find('.question__content').slideToggle();
+    });
+});

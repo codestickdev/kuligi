@@ -259,27 +259,6 @@
 .frontAbout{
     padding: 38px 0;
 
-    &__badges{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 850px;
-        margin: 0 auto 50px;
-
-        .badge{
-            display: flex;
-            height: 108px;
-            max-width: 220px;
-            
-            img{
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-        }
-    }
-
     &__wrap{
         display: flex;
         align-items: center;
@@ -332,6 +311,16 @@
             &__slide{
                 outline: none;
 
+                h2,
+                h3,
+                h4{
+                    font-size: 22px;
+                    line-height: 30px;
+                    font-weight: 800;
+                    margin: 0 0 10px;
+                    color: #000;
+                    text-align: left;
+                }
                 p{
                     font-size: 17px;
                     line-height: 30px;
@@ -369,7 +358,7 @@
     }
 
     &--single{
-        .frontAbout__badges{
+        .aboutBadges{
             margin: 0 auto !important;
         }
     }
@@ -404,14 +393,6 @@
 }
 @media (max-width: 991px){
     .frontAbout{
-        &__badges{
-            max-width: 500px;
-
-            .badge{
-                height: 80px;
-                max-width: 155px;
-            }
-        }
         &__wrap{
             flex-direction: column-reverse;
             max-width: 600px;
@@ -445,15 +426,6 @@
 @media (max-width: 575px){
     .frontAbout{
         padding: 25px 0;
-
-        &__badges{
-            max-width: 320px;
-            margin: 0 auto 25px;
-
-            .badge{
-                height: 50px;
-            }
-        }
     }
 }
 
@@ -912,6 +884,30 @@
             margin: 0;
         }
     }
+
+    &--nologos{
+        min-height: 87px;
+
+        .offerDivider__wrap{
+            &:before,
+            &:after{
+                display: none;
+            }
+
+            h3{
+                font-size: 28px;
+                line-height: 37px;
+                color: #fff;
+                font-weight: 900;
+                text-transform: none;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+    &--nomargin{
+        margin: 0 !important;
+    }
 }
 @media (max-width: 1429px){
     .offerDivider{
@@ -929,6 +925,16 @@
             p{
                 font-size: 22px;
                 line-height: 26px;
+            }
+        }
+
+        &--nologos{
+            .offerDivider__wrap{
+                h3{
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin: 0;
+                }
             }
         }
     }
@@ -963,6 +969,17 @@
             p{
                 font-size: 16px;
                 line-height: 19px;
+            }
+        }
+        &--nologos{
+            padding: 20px 0;
+            min-height: auto;
+
+            .offerDivider__wrap{
+                h3{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
             }
         }
     }

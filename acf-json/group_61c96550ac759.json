@@ -426,7 +426,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_61cb1b9124237",
+            "key": "field_61f3f633cf3b1",
             "label": "Miejsce",
             "name": "singleLocation_place",
             "type": "wysiwyg",
@@ -595,7 +595,7 @@
             "delay": 0
         },
         {
-            "key": "field_61e6ce237055d",
+            "key": "field_61e6e273b6cd4",
             "label": "Droplabs",
             "name": "",
             "type": "tab",
@@ -611,8 +611,8 @@
             "endpoint": 0
         },
         {
-            "key": "field_61e6ce307055e",
-            "label": "Oferta kuligu",
+            "key": "field_61e6e27cb6cd5",
+            "label": "Droplabs - oferta",
             "name": "single_droplabs",
             "type": "textarea",
             "instructions": "",
@@ -630,8 +630,8 @@
             "new_lines": ""
         },
         {
-            "key": "field_61e6ce4f7055f",
-            "label": "Oferty dodatkowe",
+            "key": "field_61e6e28fb6cd6",
+            "label": "Droplabs - dodatkowa oferta",
             "name": "single_droplabs_extra",
             "type": "textarea",
             "instructions": "",
@@ -663,8 +663,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": true,
     "description": "",
-    "modified": 1642516115
+    "modified": 1643378245
 }

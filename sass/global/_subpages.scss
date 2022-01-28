@@ -1,0 +1,128 @@
+.subpageHeader{
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    box-shadow: inset -100vw 0 #00000052;
+
+    &__wrap{
+        padding-left: 190px;
+        position: relative;
+
+        &:before{
+            content: '';
+            background-image: url('/wp-content/themes/kuligi/images/vectors/parzenica.svg');
+            background-size: 100px;
+            width: 100px;
+            height: 135px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            z-index: 2;
+        }
+
+        h1{
+            font-size: 70px;
+            line-height: 80px;
+            color: #fff;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-shadow: 0px 5px 10px #00000029;
+        }
+        h2{
+            font-size: 50px;
+            line-height: 60px;
+            color: #fff;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-shadow: 0px 5px 10px #00000029;
+        }
+    }
+
+    &--noshadow{
+        box-shadow: none;
+    }
+}
+@media (max-width: 1199px){
+    .subpageHeader{
+        &__wrap{
+            padding-left: 150px;
+
+            h1{
+                font-size: 60px;
+                line-height: 70px; 
+                margin: 0 0 10px;
+            }
+            h2{
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    .subpageHeader{
+        &__wrap{
+            padding-left: 120px;
+
+            h1{
+                font-size: 50px;
+                line-height: 60px; 
+                margin: 0 0 10px;
+            }
+            h2{
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .subpageHeader{
+        min-height: 220px;
+
+        &__wrap{
+            padding-left: 80px;
+
+            &:before{
+                background-size: 60px;
+                width: 60px;
+                height: 80px;
+            }
+            h1{
+                font-size: 32px;
+                line-height: 40px;
+            }
+            h2{
+                font-size: 21px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+@media (max-width: 575px){
+    .subpageHeader{
+        &__wrap{
+            text-align: center;
+            padding: 80px 0 0;
+
+            &:before{
+                background-size: 50px;
+                width: 50px;
+                height: 70px;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                transform: none;
+            }
+            h1{
+                margin: 0 0 5px;
+            }
+        }
+    }
+}

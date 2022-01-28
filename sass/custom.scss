@@ -4,6 +4,7 @@
 @import 'global/_fonts';
 @import 'global/_grid';
 @import 'global/_variables';
+@import 'global/subpages';
 
 /* Partials
 ------------- */
@@ -13,9 +14,17 @@
 
 /* Pages
 ------------ */
-@import 'pages/_frontpage.scss';
-@import 'pages/_category.scss';
-@import 'pages/_single.scss';
+@import 'pages/frontpage';
+@import 'pages/category';
+@import 'pages/single';
+@import 'pages/about';
+@import 'pages/reviews';
+@import 'pages/documents';
+@import 'pages/covid';
+@import 'pages/regulamin';
+@import 'pages/contact';
+@import 'pages/faq';
+@import 'pages/partners';
 
 #wpadminbar{
     position: fixed;
@@ -148,6 +157,47 @@ body{
         span{
             font-size: 18px;
             line-height: 24px;
+        }
+    }
+}
+
+.aboutBadges{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: 0 auto 50px;
+
+    .badge{
+        display: flex;
+        height: 108px;
+        max-width: 220px;
+        
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+@media (max-width: 991px){
+    .aboutBadges{
+        max-width: 500px;
+
+        .badge{
+            height: 80px;
+            max-width: 155px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .aboutBadges{
+        max-width: 320px;
+        margin: 0 auto 25px;
+
+        .badge{
+            height: 50px;
         }
     }
 }

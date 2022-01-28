@@ -27,20 +27,9 @@ foreach($terms as $term){
 
 	<?php if(get_field('aboutSlider', 8)): ?>
     <section class="frontAbout">
-        <div class="frontAbout__badges">
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/top_marka.png' ?>"/>
-            </div>
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/certyfikowany_produkt.svg' ?>"/>
-            </div>
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/odkrycie_turystyczne.png' ?>"/>
-            </div>
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/laur_jakosci.png' ?>"/>
-            </div>
-        </div>
+
+        <?php include get_template_directory() . '/template-parts/_aboutBadges.php'; ?>
+        
         <div class="frontAbout__wrap container">
             <div class="aboutContent">
                 <?php while(have_rows('aboutSlider', 8)): the_row();?>

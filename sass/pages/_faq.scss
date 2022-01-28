@@ -1,0 +1,92 @@
+.faqList{
+    padding: 30px 0 60px;
+    background-color: #f2f2f2;
+
+    &__wrap{
+        max-width: 1000px;
+        margin: 0 auto;
+
+        &>p{
+            font-size: 17px;
+            line-height: 25px;
+            color: #000;
+            text-align: center;
+            margin: 0 0 15px;
+        }
+    }
+    &__list{
+        .question{
+            margin: 0 0 15px;
+
+            &:last-of-type{
+                margin: 0;
+            }
+
+            &__heading{
+                width: 100%;
+                min-height: 60px;
+                background-color: #fff;
+                padding: 15px 20px;
+                position: relative;
+                cursor: pointer;
+
+                &:after{
+                    content: '+';
+                    font-size: 35px;
+                    line-height: 1;
+                    font-weight: 600;
+                    color: $red;
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+
+                h2{
+                    font-size: 23px;
+                    line-height: 30px;
+                    font-weight: 900;
+                    color: #000;
+                    text-align: left;
+                    margin: 0;
+                }
+            }
+            &__content{
+                display: none;
+                padding: 0 20px 10px;
+                background-color: #fff;
+
+                p{
+                    font-size: 17px;
+                    line-height: 25px;
+                    margin: 0 0 20px;
+                    color: #000;
+
+                    b{
+                        font-weight: 800;
+                    }
+                    a{
+                        color: $red;
+                        transition: ease .3s;
+
+                        &:hover{
+                            opacity: .7;
+                        }
+                    }
+
+                    &:last-of-type{
+                        margin: 0;
+                    }
+                }
+            }
+
+            &--active{
+                .question__heading{
+                    &:after{
+                        content: '-';
+                    }
+                }
+            }
+        }
+    }
+}

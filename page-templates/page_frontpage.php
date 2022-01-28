@@ -34,20 +34,9 @@ get_header(); ?>
 
     <?php if(get_field('aboutSlider')): ?>
     <section class="frontAbout">
-        <div class="frontAbout__badges">
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/top_marka.png' ?>"/>
-            </div>
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/certyfikowany_produkt.svg' ?>"/>
-            </div>
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/odkrycie_turystyczne.png' ?>"/>
-            </div>
-            <div class="badge">
-                <img src="<?php echo get_template_directory_uri() . '/images/logos/laur_jakosci.png' ?>"/>
-            </div>
-        </div>
+
+        <?php include get_template_directory() . '/template-parts/_aboutBadges.php'; ?>
+
         <div class="frontAbout__wrap container">
             <div class="aboutContent">
                 <?php while(have_rows('aboutSlider')): the_row();?>
@@ -67,34 +56,7 @@ get_header(); ?>
     </section>
     <?php endif; ?>
 
-    <section class="frontOffer">
-        <div class="frontOffer__wrap">
-            <div class="frontOffer__heading">
-                <h2>Nasza oferta dla Ciebie</h2>
-                <div class="frontOffer__badge">
-                    <span>Przeżyj to!</span>
-                </div>
-            </div>
-            <div class="frontOffer__type" style="background-image: url('<?php echo get_template_directory_uri() . '/images/frontpage/typeOffer_01.png'; ?>');">
-                <div class="content container">
-                    <h3>Zobacz ofertę kuligów w Beskidzie żywieckim</h3>
-                    <a href="/kategorie_kuligi/kuligi-w-beskidzie-zywieckim/" class="btn btn--center"><span>Rezerwuj teraz</span></a>
-                </div>
-            </div>
-            <div class="frontOffer__type" style="background-image: url('<?php echo get_template_directory_uri() . '/images/frontpage/typeOffer_02.png'; ?>');">
-                <div class="content container">
-                    <h3>Zobacz ofertę kuligów w Beskidzie śląskim</h3>
-                    <a href="/kategorie_kuligi/kuligi-w-beskidzie-slaskim/" class="btn btn--center"><span>Rezerwuj teraz</span></a>
-                </div>
-            </div>
-            <div class="frontOffer__type" style="background-image: url('<?php echo get_template_directory_uri() . '/images/frontpage/typeOffer_03.png'; ?>');">
-                <div class="content container">
-                    <h3>Zobacz ofertę kuligów w Beskidzie małym</h3>
-                    <a href="/kategorie_kuligi/kuligi-w-beskidzie-malym/" class="btn btn--center"><span>Rezerwuj teraz</span></a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include get_template_directory() . '/template-parts/_frontOffer.php'; ?>
 
     <section class="frontList">
         <div class="frontList__wrap">
