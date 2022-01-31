@@ -49,7 +49,14 @@ foreach($terms as $term){
     </section>
     <?php endif; ?>
 
-	<section class="productList">
+    <?php if(get_field('droplabs')): ?>
+	<section class="categoryDroplabs">
+		<div class="categoryDroplabs__wrap">
+			<?php echo get_field('droplabs'); ?>
+		</div>
+	</section>
+    <?php else: ?>
+    <section class="productList">
 		<div class="productList__list">
 			<?php
 				if ( have_posts() ){
@@ -79,6 +86,8 @@ foreach($terms as $term){
             </div>
         <?php endif; ?>
 	</section>
+    <?php endif; ?>
+
 </main>
 <?php
 get_footer();

@@ -12,7 +12,9 @@ get_header();
     <header class="singleHeader" style="background-image: url('<?php the_field('singleHeader'); ?>');">
         <div class="singleHeader__wrap container">
             <h1><?php the_field('singleHeader_title'); ?></h1>
-            <h2><?php the_field('singleHeader_date'); ?></h2>
+            <?php if(get_field('singleHeader_date')): ?>
+                <h2><?php the_field('singleHeader_date'); ?></h2>
+            <?php endif; ?>
             <h3><?php the_field('singleHeader_lead'); ?></h3>
         </div>
     </header>

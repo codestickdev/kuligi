@@ -153,6 +153,25 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_61f84d32415f6",
+            "label": "Droplabs",
+            "name": "droplabs",
+            "type": "textarea",
+            "instructions": "Jeśli uzupełnisz to pole lista kuligów w kategorii zostanie zastąpiona widgetem Droplabs",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Tutaj wklej kod Droplabs",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
         }
     ],
     "location": [
@@ -172,5 +191,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1640087295
+    "modified": 1643662704
 }
