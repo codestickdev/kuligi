@@ -51,7 +51,7 @@ get_header(); ?>
                     <span>biuro@kuligiwbeskidach.pl</span>
                 </a>
             </div>
-            <form class="coopForm">
+            <form class="coopForm" name="coopForm">
                 <div class="coopForm__row">
                     <input type="text" placeholder="Pełna  nazwa firmy zgodna z KRS lub CEIDG" name="companyNumber" />
                 </div>

@@ -237,12 +237,12 @@ get_header(); ?>
                 <h2>ZOBACZ JAKIE SMAKOŁYKI SERWUJEMY NA NASZYCH KULIGACH</h2>
                 <img src="<?php echo get_template_directory_uri() . '/images/frontpage/blog_swinka.svg'; ?>"/>
                 <h3>GÓRALSKIE SMAKOŁYKI MOŻESZ ZAMÓWIĆ NA NASZEJ STRONIE: WWW.GORALSKICATERING.PL</h3>
-                <a href="#" class="btn btn--center"><span>Sprawdź</span></a>
+                <a href="http://goralskicatering.pl/" target="_blank" class="btn btn--center"><span>Sprawdź</span></a>
             </div>
         </div>
         <div class="frontBlog__list">
             <article class="post">
-                <a href="#">
+                <a href="<?php echo get_home_url() . '/jakie-smakolyki-serwujemy-na-kuligach' ?>">
                     <div class="post__thumb">
                         <img src="<?php echo get_template_directory_uri() . '/images/frontpage/blogPost_01.png'; ?>"/>
                     </div>
@@ -252,7 +252,7 @@ get_header(); ?>
                 </a>
             </article>
             <article class="post">
-                <a href="#">
+                <a href="<?php echo get_home_url() . '/oscypki' ?>">
                     <div class="post__thumb">
                         <img src="<?php echo get_template_directory_uri() . '/images/frontpage/blogPost_02.png'; ?>"/>
                     </div>
@@ -262,7 +262,7 @@ get_header(); ?>
                 </a>
             </article>
             <article class="post">
-                <a href="#">
+                <a href="<?php echo get_home_url() . '/jaka-jest-goralska-kuchnia' ?>">
                     <div class="post__thumb">
                         <img src="<?php echo get_template_directory_uri() . '/images/frontpage/blogPost_03.png'; ?>"/>
                     </div>

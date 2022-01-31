@@ -44,25 +44,25 @@
 				?>
 			</nav>
 			<div class="siteHeader__social">
-				<a href="<?php the_field('social_fb_link', 'option'); ?>" class="social">
+				<a href="<?php the_field('social_fb_url', 'option'); ?>" class="social" target="_blank">
 					<img src="<?php the_field('social_fb_logo', 'option'); ?>" />
 				</a>
-				<a href="<?php the_field('social_ig_link', 'option'); ?>" class="social">
+				<a href="<?php the_field('social_ig_url', 'option'); ?>" class="social" target="_blank">
 					<img src="<?php the_field('social_ig_logo', 'option'); ?>" />
 				</a>
-				<a href="<?php the_field('social_yt_link', 'option'); ?>" class="social">
+				<a href="<?php the_field('social_yt_url', 'option'); ?>" class="social" target="_blank">
 					<img src="<?php the_field('social_yt_logo', 'option'); ?>" />
 				</a>
-				<a href="<?php the_field('social_wap_link', 'option'); ?>" class="social">
+				<a href="<?php the_field('social_wap_url', 'option'); ?>" class="social" target="_blank">
 					<img src="<?php the_field('social_wap_logo', 'option'); ?>" />
 				</a>
-				<a href="<?php the_field('social_air_link', 'option'); ?>" class="social">
+				<a href="<?php the_field('social_air_url', 'option'); ?>" class="social" target="_blank">
 					<img src="<?php the_field('social_air_logo', 'option'); ?>" />
 				</a>
-				<a href="<?php the_field('social_trip_link', 'option'); ?>" class="social">
+				<a href="<?php the_field('social_trip_url', 'option'); ?>" class="social" target="_blank">
 					<img src="<?php the_field('social_trip_logo', 'option'); ?>" />
 				</a>
-				<a href="<?php the_field('social_pin_link', 'option'); ?>" class="social">
+				<a href="<?php the_field('social_pin_url', 'option'); ?>" class="social" target="_blank">
 					<img src="<?php the_field('social_pin_logo', 'option'); ?>" />
 				</a>
 			</div>

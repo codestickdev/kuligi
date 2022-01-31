@@ -38,25 +38,25 @@
 						34-300 Żywiec<br/>
 						<a href="mailto:biuro@kuligiwbeskidach.pl">biuro@kuligiwbeskidach.pl</a></p>
 						<div class="social">
-							<a href="<?php the_field('social_fb_link', 'option'); ?>">
+							<a href="<?php echo get_field('social_fb_url', 'option'); ?>" target="_blank">
 								<img src="<?php the_field('social_fb_logo_alt', 'option'); ?>" />
 							</a>
-							<a href="<?php the_field('social_ig_link', 'option'); ?>">
+							<a href="<?php echo get_field('social_ig_url', 'option'); ?>" target="_blank">
 								<img src="<?php the_field('social_ig_logo_alt', 'option'); ?>" />
 							</a>
-							<a href="<?php the_field('social_yt_link', 'option'); ?>">
+							<a href="<?php echo get_field('social_yt_url', 'option'); ?>" target="_blank">
 								<img src="<?php the_field('social_yt_logo_alt', 'option'); ?>" />
 							</a>
-							<a href="<?php the_field('social_wap_link', 'option'); ?>">
+							<a href="<?php echo get_field('social_wap_url', 'option'); ?>" target="_blank">
 								<img src="<?php the_field('social_wap_logo_alt', 'option'); ?>" />
 							</a>
-							<a href="<?php the_field('social_air_link', 'option'); ?>">
+							<a href="<?php echo get_field('social_air_url', 'option'); ?>" target="_blank">
 								<img src="<?php the_field('social_air_logo_alt', 'option'); ?>" />
 							</a>
-							<a href="<?php the_field('social_trip_link', 'option'); ?>">
+							<a href="<?php echo get_field('social_trip_url', 'option'); ?>" target="_blank">
 								<img src="<?php the_field('social_trip_logo_alt', 'option'); ?>" />
 							</a>
-							<a href="<?php the_field('social_pin_link', 'option'); ?>">
+							<a href="<?php echo get_field('social_pin_url', 'option'); ?>" target="_blank">
 								<img src="<?php the_field('social_pin_logo_alt', 'option'); ?>" />
 							</a>
 						</div>

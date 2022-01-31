@@ -22,11 +22,18 @@
 @import 'pages/documents';
 @import 'pages/covid';
 @import 'pages/regulamin';
-@import 'pages/contact';
+@import 'pages/coop';
 @import 'pages/faq';
 @import 'pages/partners';
 @import 'pages/team';
 @import 'pages/map';
+@import 'pages/contact';
+@import 'pages/gallery';
+@import 'pages/gallerySingle';
+
+/* Pages
+------------ */
+@import 'posts/post';
 
 #wpadminbar{
     position: fixed;

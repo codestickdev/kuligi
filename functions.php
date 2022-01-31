@@ -212,6 +212,11 @@ function kuligi_custom(){
 	wp_register_script( 'slick-script', get_template_directory_uri() . '/plugins/slick/slick.min.js', null, null, true );
 	wp_enqueue_script('slick-script');
 
+	// Lightbox
+	wp_enqueue_style( 'lightbox-css', get_template_directory_uri() . '/plugins/lightbox/dist/css/lightbox.min.css', array(), _S_VERSION );
+	wp_register_script( 'lightbox-script', get_template_directory_uri() . '/plugins/lightbox/dist/js/lightbox.min.js', null, null, true );
+	wp_enqueue_script('lightbox-script');
+
 	// Custom scripts / sliders
 	wp_register_script( 'kuligi-script', get_template_directory_uri() . '/js/custom.js?ver=' . $theme_version . $random_number, null, null, true );
 	wp_enqueue_script('kuligi-script');

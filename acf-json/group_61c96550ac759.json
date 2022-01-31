@@ -504,22 +504,42 @@
             ]
         },
         {
-            "key": "field_61cb1c3e2423b",
-            "label": "Mapa",
-            "name": "singleMap",
-            "type": "google_map",
+            "key": "field_61f8491a4a4e3",
+            "label": "Szerokość geograficzna",
+            "name": "singleMap_lat",
+            "type": "text",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
-            "center_lat": "",
-            "center_lng": "",
-            "zoom": "",
-            "height": ""
+            "default_value": "",
+            "placeholder": "49.62665792036557",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61f849454a4e4",
+            "label": "Długość geograficzna",
+            "name": "singleMap_lng",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "19.523171245078032",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_61cb27d5fc3c0",
@@ -687,5 +707,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1643390629
+    "modified": 1643661868
 }

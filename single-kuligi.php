@@ -95,8 +95,9 @@ get_header();
             </div>
             <div class="singleLocation__map">
                 <div id="kuligMap" data-zoom="14">
-                    <?php $map = get_field('singleMap'); ?>
-                    <div class="marker" data-lat="<?php echo $map['lat']; ?>" data-lng="<?php echo $map['lng']; ?>"></div>
+                    <?php $lat = get_field('singleMap_lat'); ?>
+                    <?php $lng = get_field('singleMap_lng'); ?>
+                    <div class="marker" data-lat="<?php echo $lat; ?>" data-lng="<?php echo $lng; ?>"></div>
                 </div>
             </div>
         </div>

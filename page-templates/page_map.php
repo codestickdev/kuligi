@@ -47,7 +47,8 @@ get_header(); ?>
                 <?php foreach( $posts as $post ):
                     setup_postdata( $post );
                     $cats = get_the_terms($post->ID, 'kategorie_kuligi');
-                    $map = get_field('singleMap');
+                    $lat = get_field('singleMap_lat');
+                    $lng = get_field('singleMap_lng');
                     $type = '';
 
                     foreach( $cats as $cat ){
@@ -63,7 +64,7 @@ get_header(); ?>
                     }
                     if($type !== ''):
                 ?>
-                    <div class="marker" data-type="<?php echo $type; ?>" data-id="<?php echo $post->ID; ?>" data-lat="<?php echo $map['lat']; ?>" data-lng="<?php echo $map['lng']; ?>"></div>
+                    <div class="marker" data-type="<?php echo $type; ?>" data-id="<?php echo $post->ID; ?>" data-lat="<?php echo $lat; ?>" data-lng="<?php echo $lng; ?>"></div>
                 <?php 
                     endif;
                     endforeach;
