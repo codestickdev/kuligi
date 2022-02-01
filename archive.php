@@ -8,14 +8,10 @@
  */
 
 get_header();
-$page_id = get_the_ID();
-$name = '';
-$cat_id = 0;
-$terms = get_the_terms($post->ID, 'kategorie_kuligi');
-foreach($terms as $term){
-	$name = $term->name;
-	$cat_id = $term->term_id;
-}
+
+$term = get_queried_object();
+$name = $term->name;
+$cat_id = $term->term_id;
 ?>
 <main class="kwb kwb--category" data-id="<?php echo $cat_id; ?>">
 	<header class="catHeader" style="background-image: url('<?php echo get_template_directory_uri() . '/images/frontpage/typeOffer_03.png'; ?>');">
