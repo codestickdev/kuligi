@@ -48,11 +48,11 @@ foreach($terms as $term){
         </div>
     </section>
     <?php endif; ?>
-
-    <?php if(get_field('droplabs')): ?>
+    
+    <?php if(get_field('droplabs', 'term_' . $cat_id)): ?>
 	<section class="categoryDroplabs">
 		<div class="categoryDroplabs__wrap">
-			<?php echo get_field('droplabs'); ?>
+			<?php echo get_field('droplabs', 'term_' . $cat_id); ?>
 		</div>
 	</section>
     <?php else: ?>
