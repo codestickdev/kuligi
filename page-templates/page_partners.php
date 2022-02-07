@@ -30,6 +30,7 @@ get_header(); ?>
                 <img src="<?php echo $logo; ?>"/>
                 <div class="partner__cover">
                     <h2><?php echo $name; ?></h2>
+                    <p><?php echo $desc; ?></p>
                 </div>
             </a>
             <?php endwhile; ?>
