@@ -4522,6 +4522,7 @@ body.admin-bar .siteHeader {
   background-color: #fff;
   margin: 0 30px 60px;
   cursor: pointer;
+  outline: none;
   position: relative;
 }
 
