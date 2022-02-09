@@ -77,7 +77,7 @@ $cat_id = $term->term_id;
     <section class="frontAbout frontAbout--single">
         <?php include get_template_directory() . '/template-parts/_aboutBadges.php'; ?>
     </section>
-    <section class="singleInfo">
+    <section class="singleInfo mb-3">
         <div class="singleInfo__heading">
             <h2>Jak zarezerwować imprezę w naszym systemie rezerwacji imprez? Nic prostszego! </h2>
         </div>
