@@ -24,8 +24,10 @@ $cat_id = $term->term_id;
 	<?php if(get_field('aboutSlider', 8)): ?>
     <section class="frontAbout">
 
+    <?php if(!get_field('droplabs', 'term_' . $cat_id)): ?>
         <?php include get_template_directory() . '/template-parts/_aboutBadges.php'; ?>
-        
+    <?php endif; ?>
+
         <div class="frontAbout__wrap container">
             <div class="aboutContent">
                 <?php while(have_rows('aboutSlider', 8)): the_row();?>
