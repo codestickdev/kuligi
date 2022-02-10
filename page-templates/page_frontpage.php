@@ -278,7 +278,7 @@ get_header(); ?>
         <div class="frontDegustation__wrap">
             <h2>ZAREZERWUJ DEGUSTACJĘ<br/>REGIONALNYCH ALKOHOLI PODCZAS KULIGU</h2>
             <h3>WYPIJ Z NAMI TĘGI HAUST PALĄCEGO TRUNKU!</h3>
-            <a href="#" class="btn btn--center"><span>Rezerwuj teraz</span></a>
+            <a href="/degustacja-regionalnych-alkoholi/" class="btn btn--center"><span>Rezerwuj teraz</span></a>
         </div>
     </section>
 
