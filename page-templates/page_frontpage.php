@@ -146,7 +146,7 @@ get_header(); ?>
             <div class="frontOffer__type frontOffer__type--other" style="background-image: url('<?php echo get_template_directory_uri() . '/images/frontpage/kapela_goralska_bg.png'; ?>');">
                 <div class="content container">
                     <h3>Kapela góralska</h3>
-                    <a href="#" class="btn btn--center"><span>Oferta kapeli</span></a>
+                    <a href="/kapela-goralska/" class="btn btn--center"><span>Oferta kapeli</span></a>
                 </div>
             </div>
         </div>

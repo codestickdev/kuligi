@@ -2,6 +2,72 @@
     background-color: #f2f2f2;
     padding: 60px 0 0;
 
+    &--alkohol{
+        .partnersList__wrap{
+            .partner{
+                cursor: auto;
+
+                img{
+                    width: auto;
+                    max-height: 80%;
+                }
+            }
+        }
+    }
+    &--kapela{
+        background-color: #fff;
+        padding: 60px 0 0;
+
+        @media (max-width: 1430px){
+            padding: 30px 0 0;
+        }
+        @media (max-width: 991px){
+            padding: 20px 0 0;
+        }
+        @media (max-width: 575px){
+            padding: 10px 0 0;
+        }
+
+        .partnersList__wrap{
+            .partner{
+                background-color: #F2F2F2;
+                cursor: pointer;
+                text-decoration: none;
+                padding: 0 15px;
+                transition: ease .3s;
+
+                &>h2{
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 800;
+                    color: #000;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    transition: ease .3s;
+                }
+
+                &:hover{
+                    background-color: $red;
+
+                    &>h2{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &--kapelaSingle{
+        background-color: #f2f2f2;
+        padding: 30px 0 0;
+
+        .partnersList__wrap{
+            .partner{
+                background-color: #fff;
+            }
+        }
+    }
+
     &__wrap{
         display: flex;
         flex-wrap: wrap;
@@ -72,6 +138,25 @@
                     text-align: center;
                     margin: 0;
                 }
+            }
+        }
+    }
+    &__info{
+        padding: 0 15px 30px;
+
+        @media (min-width: 1430px){
+            max-width: 1310px;
+        }
+
+        p{
+            font-size: 17px;
+            line-height: 30px;
+            color: #000;
+            text-align: left;
+            margin: 0;
+
+            b{
+                font-weight: 700;
             }
         }
     }

@@ -30,6 +30,8 @@
 @import 'pages/contact';
 @import 'pages/gallery';
 @import 'pages/gallerySingle';
+@import 'pages/degustacja';
+@import 'pages/kapela';
 
 /* Pages
 ------------ */
@@ -157,8 +159,34 @@ body{
     &--long{
         max-width: 1200px;
     }
+    &--auto{
+        max-width: fit-content;
+        max-width: -moz-max-content;
+        max-width: -webkit-fit-content;
+        
+        span{
+            padding: 10px 50px;
+        }
+    }
     &--left{
         margin: 0;
+    }
+    &--lightText{
+        span{
+            font-weight: 500;
+            text-transform: none;
+
+            b{
+                font-weight: 800;
+            }
+        }
+    }
+}
+@media (max-width: 1230px){
+    .divider{
+        &--long{
+            max-width: calc(100% - 30px);
+        }
     }
 }
 @media (max-width: 767px){

@@ -221,7 +221,7 @@ body {
 @media (max-width: 575px) {
   .subpageHeader__wrap {
     text-align: center;
-    padding: 80px 0 0;
+    padding: 90px 15px 15px;
   }
   .subpageHeader__wrap:before {
     background-size: 50px;
@@ -230,7 +230,7 @@ body {
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 0;
+    top: 10px;
     transform: none;
   }
   .subpageHeader__wrap h1 {
@@ -1998,6 +1998,10 @@ body.admin-bar .siteHeader {
 
 .offerDivider--nomargin {
   margin: 0 !important;
+}
+
+.offerDivider--uppercase .offerDivider__wrap h3 {
+  text-transform: uppercase;
 }
 
 @media (max-width: 1429px) {
@@ -4505,6 +4509,74 @@ body.admin-bar .siteHeader {
   padding: 60px 0 0;
 }
 
+.partnersList--alkohol .partnersList__wrap .partner {
+  cursor: auto;
+}
+
+.partnersList--alkohol .partnersList__wrap .partner img {
+  width: auto;
+  max-height: 80%;
+}
+
+.partnersList--kapela {
+  background-color: #fff;
+  padding: 60px 0 0;
+}
+
+@media (max-width: 1430px) {
+  .partnersList--kapela {
+    padding: 30px 0 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .partnersList--kapela {
+    padding: 20px 0 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .partnersList--kapela {
+    padding: 10px 0 0;
+  }
+}
+
+.partnersList--kapela .partnersList__wrap .partner {
+  background-color: #F2F2F2;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 15px;
+  transition: ease .3s;
+}
+
+.partnersList--kapela .partnersList__wrap .partner > h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: ease .3s;
+}
+
+.partnersList--kapela .partnersList__wrap .partner:hover {
+  background-color: #E3000F;
+}
+
+.partnersList--kapela .partnersList__wrap .partner:hover > h2 {
+  color: #fff;
+}
+
+.partnersList--kapelaSingle {
+  background-color: #f2f2f2;
+  padding: 30px 0 0;
+}
+
+.partnersList--kapelaSingle .partnersList__wrap .partner {
+  background-color: #fff;
+}
+
 .partnersList__wrap {
   display: flex;
   flex-wrap: wrap;
@@ -4576,6 +4648,28 @@ body.admin-bar .siteHeader {
   color: #fff;
   text-align: center;
   margin: 0;
+}
+
+.partnersList__info {
+  padding: 0 15px 30px;
+}
+
+@media (min-width: 1430px) {
+  .partnersList__info {
+    max-width: 1310px;
+  }
+}
+
+.partnersList__info p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000;
+  text-align: left;
+  margin: 0;
+}
+
+.partnersList__info p b {
+  font-weight: 700;
 }
 
 @media (max-width: 1429px) {
@@ -5139,6 +5233,10 @@ body.admin-bar .siteHeader {
   padding: 15px 0;
 }
 
+.galleryList--alkohol {
+  background-color: #f2f2f2;
+}
+
 .galleryList__wrap {
   display: flex;
   align-items: center;
@@ -5197,6 +5295,293 @@ body.admin-bar .siteHeader {
   }
   .galleryList__image:nth-child(2n+2) {
     margin-right: 0;
+  }
+}
+
+.alkoText {
+  margin: 0 auto 30px;
+}
+
+.alkoText__wrap {
+  max-width: 1200px;
+}
+
+.alkoText__wrap p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000;
+  margin: 0 0 20px;
+  text-align: justify;
+}
+
+.alkoText__wrap p:last-of-type {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .alkoText__wrap p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.alkoFullImage {
+  display: flex;
+}
+
+.alkoFullImage img {
+  width: 100%;
+}
+
+.alkoInfo {
+  padding: 52px 0 23px;
+  background-color: #f2f2f2;
+}
+
+.alkoInfo__wrap h2 {
+  font-size: 22px;
+  line-height: 32px;
+  color: #000;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0 0 15px;
+}
+
+.alkoInfo__wrap p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000;
+  text-align: justify;
+  margin: 0 0 20px;
+}
+
+.alkoInfo__wrap p:last-of-type {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .alkoInfo {
+    padding: 25px 0;
+  }
+  .alkoInfo__wrap h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .alkoInfo__wrap p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.alkoDroplabs__droplabs {
+  width: 100%;
+  padding: 40px 15px;
+}
+
+.alkoDroplabs__info {
+  padding: 50px 0 35px;
+  background-color: #f2f2f2;
+}
+
+.alkoDroplabs__info .wrap {
+  display: flex;
+  max-width: 1260px;
+}
+
+.alkoDroplabs__info .wrap .left {
+  width: 60%;
+  padding-right: 30px;
+}
+
+.alkoDroplabs__info .wrap .right {
+  width: 40%;
+}
+
+.alkoDroplabs__info .wrap .left .divider,
+.alkoDroplabs__info .wrap .right .divider {
+  margin: 0 auto 20px 0;
+}
+
+.alkoDroplabs__info .wrap .left p,
+.alkoDroplabs__info .wrap .right p {
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0 0 4px;
+  color: #000;
+  max-width: 640px;
+}
+
+.alkoDroplabs__info .wrap .left p b,
+.alkoDroplabs__info .wrap .right p b {
+  font-weight: 700;
+}
+
+.alkoDroplabs__info .wrap .left p:last-of-type,
+.alkoDroplabs__info .wrap .right p:last-of-type {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .alkoDroplabs__info .wrap {
+    flex-direction: column;
+  }
+  .alkoDroplabs__info .wrap .left {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .alkoDroplabs__info .wrap .right {
+    width: 100%;
+  }
+  .alkoDroplabs__info .wrap .left p,
+  .alkoDroplabs__info .wrap .right p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.ageModal {
+  background-color: #000000c9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: ease .3s;
+}
+
+.ageModal--ready {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.ageModal--active .ageModal__wrap {
+  opacity: 1;
+}
+
+.ageModal__wrap {
+  max-width: 600px;
+  width: 100%;
+  padding: 30px 20px 45px;
+  background-color: #fff;
+  opacity: 0;
+  transition: ease .3s;
+}
+
+.ageModal__wrap img {
+  display: block;
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ageModal__wrap h3 {
+  font-size: 17px;
+  line-height: 27px;
+  color: #000;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.ageModal .ageForm > p {
+  font-size: 17px;
+  line-height: 24px;
+  color: #000;
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+.ageModal .ageForm__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10px;
+}
+
+.ageModal .ageForm__input {
+  background-color: #fff;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 17px;
+  color: #000;
+  outline: none;
+  max-width: 100px;
+  padding: 0 10px;
+  width: 100%;
+  height: 45px;
+  -moz-appearance: textfield;
+  transition: ease .3s;
+  margin: 0 3px;
+}
+
+.ageModal .ageForm__input--error {
+  border-color: #f00;
+}
+
+.ageModal .ageForm__input--year {
+  max-width: 130px;
+}
+
+.ageModal .ageForm__input:focus {
+  border-color: #000;
+}
+
+.ageModal .ageForm__input::placeholder {
+  color: #7C7C7C;
+}
+
+.ageModal .ageForm__input::-webkit-inner-spin-button, .ageModal .ageForm__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ageModal .ageForm .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ageModal .ageForm .checkbox input {
+  margin-right: 4px;
+}
+
+.ageModal .ageForm .btn {
+  cursor: pointer;
+  margin: 20px auto 0;
+}
+
+.kapelaDroplabs {
+  padding: 42px 0;
+}
+
+.kapelaDroplabs__wrap {
+  padding: 0 15px;
+}
+
+.kapelaDroplabs__wrap .divider {
+  margin: 0 auto 30px;
+}
+
+@media (min-width: 1060px) {
+  .kapelaDroplabs__wrap .divider {
+    max-width: 1000px;
+  }
+}
+
+.partnersList--kapelaSingle .divider {
+  margin: 0 auto 30px;
+}
+
+@media (min-width: 1060px) {
+  .partnersList--kapelaSingle .divider {
+    max-width: 1000px;
   }
 }
 
@@ -5341,8 +5726,33 @@ body.noscroll {
   max-width: 1200px;
 }
 
+.divider--auto {
+  max-width: fit-content;
+  max-width: -moz-max-content;
+  max-width: -webkit-fit-content;
+}
+
+.divider--auto span {
+  padding: 10px 50px;
+}
+
 .divider--left {
   margin: 0;
+}
+
+.divider--lightText span {
+  font-weight: 500;
+  text-transform: none;
+}
+
+.divider--lightText span b {
+  font-weight: 800;
+}
+
+@media (max-width: 1230px) {
+  .divider--long {
+    max-width: calc(100% - 30px);
+  }
 }
 
 @media (max-width: 767px) {

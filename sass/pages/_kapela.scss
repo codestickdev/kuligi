@@ -1,0 +1,28 @@
+.kapelaDroplabs{
+    padding: 42px 0;
+
+    &__wrap{
+        padding: 0 15px;
+
+        .divider{
+            margin: 0 auto 30px;
+
+            @media (min-width: 1060px){
+                max-width: 1000px;
+            }
+        }
+    }
+}
+
+.partnersList{
+    &--kapelaSingle{
+
+        .divider{
+            margin: 0 auto 30px;
+
+            @media (min-width: 1060px){
+                max-width: 1000px;
+            }
+        }
+    }
+}

@@ -911,6 +911,13 @@
     &--nomargin{
         margin: 0 !important;
     }
+    &--uppercase{
+        .offerDivider__wrap{
+            h3{
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 @media (max-width: 1429px){
     .offerDivider{

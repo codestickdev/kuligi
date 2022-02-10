@@ -206,6 +206,10 @@ function kuligi_custom(){
 	wp_register_script( 'jQuery', get_template_directory_uri() . '/plugins/jQuery/jquery-3.6.0.min.js', null, null, true );
 	wp_enqueue_script('jQuery');
 
+	// jQuery cookie
+	wp_register_script( 'jQuery-cookie', get_template_directory_uri() . '/plugins/jQuery/jquery.cookie.js', null, null, true );
+	wp_enqueue_script('jQuery-cookie');
+
 	// Slick
 	wp_enqueue_style( 'slick-style', get_template_directory_uri() . '/plugins/slick/slick-theme.css', array(), _S_VERSION );
 	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/plugins/slick/slick.css', array(), _S_VERSION );
@@ -220,6 +224,7 @@ function kuligi_custom(){
 	// Custom scripts / sliders
 	wp_register_script( 'kuligi-script', get_template_directory_uri() . '/js/custom.js?ver=' . $theme_version . $random_number, null, null, true );
 	wp_enqueue_script('kuligi-script');
+	wp_localize_script( 'kuligi-script', 'PBAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 	
 	wp_register_script( 'kuligi-sliders', get_template_directory_uri() . '/js/_sliders.js?ver=' . $theme_version . $random_number, null, null, true );
 	wp_enqueue_script('kuligi-sliders');
@@ -230,6 +235,10 @@ function kuligi_custom(){
 }
 add_action( 'wp_enqueue_scripts', 'kuligi_custom' );
 
+
+/**
+ * Mapa data load
+ */
 add_action('wp_ajax_kuligiMapa', 'kuligiMapa');
 add_action('wp_ajax_nopriv_kuligiMapa', 'kuligiMapa');
 
@@ -244,6 +253,40 @@ function kuligiMapa(){
 	);
 
 	print json_encode($data);
+
+	die();
+}
+
+/**
+ * Age confirm
+ */
+add_action('wp_ajax_checkAge', 'checkAge');
+add_action('wp_ajax_nopriv_checkAge', 'checkAge');
+
+function checkAge(){
+	$year = isset( $_POST['year'] ) ? $_POST['year'] : '';
+	$month = isset( $_POST['month'] ) ? $_POST['month'] : '';
+	$day = isset( $_POST['day'] ) ? $_POST['day'] : '';
+	$remember = isset( $_POST['remember'] ) ? $_POST['remember'] : '';
+
+	$birthDate = $day . '-' . $month . '-' . $year;
+	$currentDate = date("d-m-Y");
+	$age = date_diff(date_create($birthDate), date_create($currentDate));
+	$currentAge = $age->format('%y');
+	
+	if($remember == 'true'){
+		if($currentAge >= 18){
+			echo $birthDate;
+		}else{
+			echo 'false';
+		}
+	}else{
+		if($currentAge >= 18){
+			echo 'true';
+		}else{
+			echo 'false';
+		}
+	}
 
 	die();
 }

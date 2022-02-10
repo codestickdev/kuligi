@@ -108,7 +108,7 @@
     .subpageHeader{
         &__wrap{
             text-align: center;
-            padding: 80px 0 0;
+            padding: 90px 15px 15px;
 
             &:before{
                 background-size: 50px;
@@ -117,7 +117,7 @@
                 margin: 0 auto;
                 left: 0;
                 right: 0;
-                top: 0;
+                top: 10px;
                 transform: none;
             }
             h1{
