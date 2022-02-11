@@ -5251,6 +5251,7 @@ body.admin-bar .siteHeader {
   width: 100%;
   margin: 0 7px 14px;
   cursor: pointer;
+  overflow: hidden;
   transition: ease .3s;
 }
 
