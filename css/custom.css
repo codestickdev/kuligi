@@ -5803,4 +5803,39 @@ body.noscroll {
     height: 50px;
   }
 }
+
+.error-404 {
+  min-height: calc(100vh - 680px);
+  text-align: center;
+  padding: 50px 0;
+}
+
+.error-404 h1 {
+  font-size: 170px;
+  line-height: 1;
+  color: #000;
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.error-404 p {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  text-align: center;
+}
+
+.error-404 .btn {
+  margin: 0 auto;
+}
+
+@media (max-width: 575px) {
+  .error-404 h1 {
+    font-size: 70px;
+  }
+  .error-404 p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 /*# sourceMappingURL=custom.css.map */
