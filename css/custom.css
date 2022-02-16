@@ -5808,9 +5808,12 @@ body.noscroll {
   min-height: calc(100vh - 680px);
   text-align: center;
   padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.error-404 h1 {
+.error-404 .wrap h1 {
   font-size: 170px;
   line-height: 1;
   color: #000;
@@ -5818,22 +5821,22 @@ body.noscroll {
   margin: 0 0 10px;
 }
 
-.error-404 p {
+.error-404 .wrap p {
   font-size: 21px;
   line-height: 26px;
   color: #000;
   text-align: center;
 }
 
-.error-404 .btn {
+.error-404 .wrap .btn {
   margin: 0 auto;
 }
 
 @media (max-width: 575px) {
-  .error-404 h1 {
+  .error-404 .wrap h1 {
     font-size: 70px;
   }
-  .error-404 p {
+  .error-404 .wrap p {
     font-size: 18px;
     line-height: 24px;
   }
