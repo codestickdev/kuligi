@@ -251,6 +251,17 @@ body {
   transition: ease .8s;
 }
 
+.siteHeader::before {
+  opacity: 0;
+  content: '';
+  width: 1px;
+  height: 1px;
+  background-image: url("/wp-content/themes/kuligi/images/fix.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .siteHeader--shadow {
   box-shadow: 0 0 25px #00000038;
 }
